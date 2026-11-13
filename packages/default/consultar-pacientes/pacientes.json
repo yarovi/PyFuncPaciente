@@ -1,0 +1,13 @@
+
+[
+  {
+    "id": 1,
+    "nombre": "Ana Torres",
+    "estado": "ACTIVO"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos Ruiz",
+    "estado": "ACTIVO"
+  }
+]

@@ -1,0 +1,12 @@
+1ca5fe92d720dbb24ed671d7b64af23db315589cb3a36e5322ee4703322b8ee7
+
+#Ejemplo para probar desde do
+
+{
+  "__ow_headers": {
+    "x-backend-api-key": "REEMPLAZAR_CON_TU_BACKEND_API_KEY"
+  }
+}
+
+#Compilar en remoto 
+doctl serverless deploy . --env ".config/.env" --remote-build

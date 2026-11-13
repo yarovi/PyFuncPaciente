@@ -1,0 +1,13 @@
+[
+  {
+    "apihost": "https://faas-nyc1-2ef2e6cc.doserverless.co",
+    "namespace": "fn-81fa911f-b328-41e7-b7ed-0ed23fbfab00",
+    "packageVersions": {},
+    "actionVersions": {
+      "consultar-pacientes": {
+        "version": "0.0.17",
+        "digest": "24f4c8182f3b26f3cf6ffb651ee12357f26d64a38c217e0859a51d41ab4a313b"
+      }
+    }
+  }
+]

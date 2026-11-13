@@ -1,0 +1,58 @@
+
+import json
+import os
+import hmac
+from pathlib import Path
+
+
+def main(args):
+    
+    api_key_esperada = os.environ.get("BACKEND_API_KEY")
+    api_key_recibida = args.get("__ow_headers", {}).get(
+        "x-backend-api-key"
+    )
+
+    if (
+        not api_key_esperada
+        or not isinstance(api_key_recibida, str)
+        or not hmac.compare_digest(
+            api_key_recibida,
+            api_key_esperada
+        )
+    ):
+        return {
+            "statusCode": 401,
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "body": {
+                "error": "Unauthorized",
+                "message": "Credencial de servicio inválida"
+            }
+        }
+
+    archivo = Path(__file__).with_name("pacientes.json")
+
+    with archivo.open("r", encoding="utf-8") as contenido:
+        pacientes = json.load(contenido)
+
+    return {
+        "statusCode": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "body": {
+            "resultado": "OK",
+            "total": len(pacientes),
+            "pacientes": pacientes
+        }
+    }
+    '''
+    api_key_esperada = os.environ.get("BACKEND_API_KEY")
+
+    print(
+        "DIAGNOSTICO_BACKEND_API_KEY:",
+        "CONFIGURADA" if api_key_esperada else "NO_CONFIGURADA"
+    )
+    '''
+    # Mantener aquí el resto de la lógica existente.
