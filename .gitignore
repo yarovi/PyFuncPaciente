@@ -5,3 +5,7 @@
 .config/
 .venv/
 **/__deployer__.zip
+
+# Python - archivos compilados
+__pycache__/
+*.py[cod]

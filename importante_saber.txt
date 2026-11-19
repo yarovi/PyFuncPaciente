@@ -10,3 +10,8 @@
 
 #Compilar en remoto 
 doctl serverless deploy . --env ".config/.env" --remote-build
+
+# Deploy onlye one directory
+doctl serverless deploy . \
+  --include consultar-catalogos \
+  --env ".config/.env"

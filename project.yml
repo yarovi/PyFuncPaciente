@@ -7,3 +7,16 @@ packages:
         environment: 
           BACKEND_API_KEY: ${BACKEND_API_KEY}
           DATABASE_URL: "${DATABASE_URL}"
+      - name: consultar-catalogos
+        runtime: python:3.13
+        web: true
+        environment: 
+          BACKEND_API_KEY: ${BACKEND_API_KEY}
+          DATABASE_URL: "${DATABASE_URL}"
+      - name: crear-paciente
+        runtime: python:3.13
+        web: true
+        environment:
+          BACKEND_API_KEY: ${BACKEND_API_KEY}
+          DATABASE_URL: "${DATABASE_URL}"
+          

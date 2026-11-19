@@ -7,6 +7,14 @@
       "consultar-pacientes": {
         "version": "0.0.17",
         "digest": "24f4c8182f3b26f3cf6ffb651ee12357f26d64a38c217e0859a51d41ab4a313b"
+      },
+      "consultar-catalogos": {
+        "digest": "b25d84f3fac20ef97c23ff5a53ed44386dc023d8a3c82b57a3e6aa33d9aae780",
+        "version": "0.0.3"
+      },
+      "crear-paciente": {
+        "digest": "6bcc8888d1e02d86b206facbf283d5fa952646a2addfc2aef5b5c62b996dd33a",
+        "version": "0.0.1"
       }
     }
   }
