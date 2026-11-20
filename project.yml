@@ -19,4 +19,16 @@ packages:
         environment:
           BACKEND_API_KEY: ${BACKEND_API_KEY}
           DATABASE_URL: "${DATABASE_URL}"
+      - name: actualizar-paciente
+        runtime: python:3.13
+        web: true
+        environment:
+          BACKEND_API_KEY: "${BACKEND_API_KEY}"
+          DATABASE_URL: "${DATABASE_URL}"
+      - name: obtener-paciente
+        runtime: python:3.13
+        web: true
+        environment:
+          BACKEND_API_KEY: "${BACKEND_API_KEY}"
+          DATABASE_URL: "${DATABASE_URL}"
           

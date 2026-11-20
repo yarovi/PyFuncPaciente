@@ -15,3 +15,16 @@ doctl serverless deploy . --env ".config/.env" --remote-build
 doctl serverless deploy . \
   --include consultar-catalogos \
   --env ".config/.env"
+
+  doctl serverless deploy . \
+  --env .config/.env \
+  --remote-build \
+  --include default/actualizar-paciente
+
+    doctl serverless deploy . \
+  --env .config/.env \
+  --remote-build \
+  --include default/obtener-paciente
+
+  # Dar permisos al buil.sh
+  hmod +x packages/default/actualizar-paciente/build.sh

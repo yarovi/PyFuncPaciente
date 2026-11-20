@@ -15,6 +15,14 @@
       "crear-paciente": {
         "digest": "6bcc8888d1e02d86b206facbf283d5fa952646a2addfc2aef5b5c62b996dd33a",
         "version": "0.0.1"
+      },
+      "obtener-paciente": {
+        "digest": "38d6a9d1fd257dfddf4883d6792899e5aec764cced72af33367e994981075f6c",
+        "version": "0.0.2"
+      },
+      "actualizar-paciente": {
+        "digest": "5bad1373a3e500ae4a54f89fa00ffcb0c48766887466a1a4b9f746fbf67ae54c",
+        "version": "0.0.3"
       }
     }
   }
